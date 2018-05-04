@@ -149,7 +149,7 @@ test_image = np.expand_dims(
   axis = 0 # место куда нужно дополнительную переменную закинуть
 )
 result = classifier.predict(test_image)
-training_set.class_indices
+training_set.class_indices # получаем соотношение индекса и названия
 if result[0][0] == 1:
   prediction = 'dog'
 else:
